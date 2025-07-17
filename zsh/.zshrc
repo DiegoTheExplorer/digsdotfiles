@@ -8,7 +8,7 @@ SAVEHIST=1000
 bindkey -e
 # End of lines configured by zsh-newuser-install
 
-EDITOR=nvim
+export EDITOR=nvim
 
 fastfetch
 
