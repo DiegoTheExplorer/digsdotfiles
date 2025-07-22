@@ -9,6 +9,8 @@ bindkey -e
 # End of lines configured by zsh-newuser-install
 
 export EDITOR=nvim
+export PATH="$HOME/.cargo/bin:$PATH"
+export HYPRSHOT_DIR="$HOME/Photos/Screenshots/"
 
 fastfetch
 
@@ -40,6 +42,8 @@ eval "$(zoxide init zsh)"
 
 # Starship init
 eval "$(starship init zsh)"
+
+source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
 # Fish-like syntax highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
