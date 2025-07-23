@@ -176,7 +176,7 @@ keybinds clear-defaults=true {
         bind "Ctrl w" { SwitchToMode "pane"; }
     }
     shared_except "locked" "resize" {
-        bind "Ctrl ]" { SwitchToMode "resize"; }
+        bind "Ctrl z" { SwitchToMode "resize"; }
     }
     shared_except "normal" "locked" "entersearch" {
         bind "enter" { SwitchToMode "normal"; }
@@ -243,6 +243,15 @@ keybinds clear-defaults=true {
         bind "p" { GoToPreviousTab; SwitchToMode "normal"; }
         bind "z" { ToggleFocusFullscreen; SwitchToMode "normal"; }
     }
+
+    // Keybinds for 3rd party plugins
+    shared_except "locked" {
+        bind "Ctrl y" {
+            LaunchOrFocusPlugin "file:~/.config/zellij/plugins/zellij_forgot.wasm" {
+                floating true
+            }
+        }
+    }
 }
 
 // Plugin aliases - can be used to change the implementation of Zellij
@@ -270,27 +279,14 @@ plugins {
 load_plugins {
 }
  
-// Use a simplified UI without special fonts (arrow glyphs)
-// Options:
-//   - true
-//   - false (Default)
-// 
-// simplified_ui true
- 
 // Choose the theme that is specified in the themes section.
 // Default: default
 // 
 theme "catppuccin-mocha"
  
-// Choose the base input mode of zellij.
-// Default: normal
-// 
-// default_mode "locked"
- 
 // Choose the path to the default shell that zellij will use for opening new panes
 // Default: $SHELL
 // 
 default_shell "/usr/bin/zsh"
- 
 show_startup_tips false
- 
+default_layout "compact" 
