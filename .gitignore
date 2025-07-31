@@ -4,4 +4,3 @@ nvim/.config/nvim/test.sh
 nvim/.config/nvim/.luarc.json
 nvim/.config/nvim/nvim
 nvim/.config/nvim/spell/
-nvim/.config/nvim/lazy-lock.json

@@ -17,7 +17,6 @@ return {
         'query',
         'vim',
         'vimdoc',
-        'slint',
         'java',
         'regex',
       },
