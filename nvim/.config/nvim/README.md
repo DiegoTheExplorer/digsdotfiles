@@ -22,7 +22,7 @@ External Requirements:
 - zoxide, yazi
 - Clipboard tool (xclip/xsel/win32yank or other depending on platform)
 - A [Nerd Font](https://www.nerdfonts.com/): optional, provides various icons
-  - The Nerd Font I use is [Terminess](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Terminus.zip)
+  - The Nerd Font I use is [Terminess](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Terminus.zip
   - if you have it set `vim.g.have_nerd_font` in `init.lua` to true
 
 > **NOTE**
