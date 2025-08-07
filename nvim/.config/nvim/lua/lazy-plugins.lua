@@ -36,6 +36,9 @@ require('lazy').setup({
   require 'plugins/blink-cmp', -- Autocompletion
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
+  -- Notes
+  require 'plugins/obsidian', -- Adds the Obsidian app's note taking capabilities
+  require 'plugins/markview', -- Markdown, html, latex, typst, yaml previewer
 
   -- General Plugins
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
