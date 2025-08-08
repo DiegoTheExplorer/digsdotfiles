@@ -17,7 +17,7 @@ return {
     legacy_commands = false,
     disable_frontmatter = true,
     note_id_func = function(title)
-      local id_from_date_time = os.date('%Y%m%d%H%M%S', os.time() - 86400)
+      local id_from_date_time = os.date('%Y%m%d%H%M%S', os.time())
       if title == nil then
         return id_from_date_time
       end
@@ -36,5 +36,25 @@ return {
       date_format = '%Y-%m-%d-%a',
       time_format = '%H:%M',
     },
+    daily_notes = {
+      folder = 'daily_journal',
+      date_format = '%Y-%m-%d',
+      alias_format = '%B %-d, %Y',
+      default_tags = { 'daily-journal' },
+      template = 'journal-entry.md',
+    },
+    completion = {
+      nvim_cmp = false,
+      blink = true,
+    },
+    picker = {
+      name = 'snacks.pick',
+    },
   },
+
+  -- Command keymaps
+  vim.keymap.set('n', '<leader>o', '<cmd>Obsidian<cr>', { desc = 'Open obsidian.nvim menu' }),
+  vim.keymap.set('n', '<leader>onn', '<cmd>Obsidian new<cr>', { desc = 'Create new blank obsidian note' }),
+  vim.keymap.set('n', '<leader>ont', '<cmd>Obsidian new_from_template<cr>', { desc = 'Create new obsidian note from template' }),
+  vim.keymap.set('n', '<leader>ot', '<cmd>Obsidian today<cr>', { desc = 'Open or create the daily journal/note' }),
 }
