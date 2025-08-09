@@ -32,7 +32,6 @@ require('lazy').setup({
   require 'plugins/lspconfig', -- Main LSP Configuration
   require 'plugins/conform', -- Autoformat
   require 'plugins/treesitter',
-  -- TODO: Eventually replace with blink.cmp
   require 'plugins/blink-cmp', -- Autocompletion
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
@@ -43,11 +42,13 @@ require('lazy').setup({
   -- General Plugins
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
   'sitiom/nvim-numbertoggle',
+  require 'plugins/noice',
   require 'plugins/gitsigns', -- Adds git related signs to the gutter, as well as utilities for managing changes
   require 'plugins/mini',
   require 'plugins/oil', -- Edit files like a vim buffer
   require 'plugins/yazi',
   require 'plugins/vimtex', -- Latex file editing
+
   -- TODO: properly configure nvim dap
   require 'kickstart.plugins.debug', -- Neovim debug adapter
 

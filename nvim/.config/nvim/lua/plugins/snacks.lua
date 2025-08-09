@@ -21,6 +21,11 @@ return {
           files = {
             hidden = true,
           },
+          keymaps = {
+            layout = {
+              preview = false,
+            },
+          },
         },
       },
       quickfile = { enabled = true },
@@ -414,6 +419,13 @@ return {
           Snacks.picker.undo()
         end,
         desc = 'Undo History',
+      },
+      {
+        '<leader>st',
+        function()
+          Snacks.picker.todo_comments()
+        end,
+        desc = 'Search through TODOs',
       },
       {
         '<leader>uC',
