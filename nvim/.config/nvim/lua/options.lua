@@ -65,6 +65,10 @@ vim.opt.scrolloff = 10
 -- It was in the nvim-highlight-colors instructions for highlighting css colors
 vim.opt.termguicolors = true
 
+-- Set neovim's bg as none so the terminal emulator translucency comes through
+vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
+vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })
+
 -- virtual_text enables inline error messgages
 -- idk what virtual_lines does yet
 vim.diagnostic.config {
