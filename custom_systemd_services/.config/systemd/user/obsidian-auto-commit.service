@@ -2,5 +2,5 @@
 Description=Automated hourly commit and push for Obsidian vault
 
 [Service]
-ExecStart=/home/digs/bin/obsidian-auto-commit.sh  # Full path to your script
-WorkingDirectory=/home/digs/Vaults/diego  # Optional, but ensures correct dir
+ExecStart=/home/digs/bin/obsidian-auto-commit.sh
+WorkingDirectory=/home/digs/Vaults/diego
