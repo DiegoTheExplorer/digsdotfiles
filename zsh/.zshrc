@@ -11,6 +11,7 @@ bindkey -e
 export EDITOR=nvim
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
 export HYPRSHOT_DIR="$HOME/Pictures/Screenshots"
 
 alias zj="zellij"

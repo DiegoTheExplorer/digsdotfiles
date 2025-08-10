@@ -1,0 +1,10 @@
+[Unit]
+Description=Run Obsidian auto-commit every hour on the hour
+
+[Timer]
+OnCalendar=*-*-* *:00:00
+Persistent=false
+Unit=obsidian-auto-commit.service
+
+[Install]
+WantedBy=timers.target
