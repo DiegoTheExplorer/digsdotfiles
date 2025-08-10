@@ -37,7 +37,7 @@ require('lazy').setup({
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
   -- Notes
   require 'plugins/obsidian', -- Adds the Obsidian app's note taking capabilities
-  require 'plugins/markview', -- Markdown, html, latex, typst, yaml previewer
+  require 'plugins/render-markdown', -- Markdown, html, latex, typst, yaml previewer
 
   -- General Plugins
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically

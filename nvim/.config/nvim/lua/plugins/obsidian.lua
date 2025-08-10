@@ -51,6 +51,9 @@ return {
     picker = {
       name = 'snacks.pick',
     },
+    ui = {
+      enable = false,
+    },
   },
 
   -- Command keymaps
