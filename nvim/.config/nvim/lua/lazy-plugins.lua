@@ -31,6 +31,7 @@ require('lazy').setup({
   },
   require 'plugins/lspconfig', -- Main LSP Configuration
   require 'plugins/conform', -- Autoformat
+  require 'plugins/nvim-lint', -- Linting
   require 'plugins/treesitter',
   require 'plugins/blink-cmp', -- Autocompletion
   -- Highlight todo, notes, etc in comments
