@@ -127,6 +127,7 @@ return {
         zls = {},
         svelte = {},
         gdtoolkit = {},
+        postgrestools = {},
       }
 
       -- Ensure the servers and tools above are installed
