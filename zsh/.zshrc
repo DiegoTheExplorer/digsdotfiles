@@ -8,9 +8,11 @@ SAVEHIST=1000
 bindkey -e
 # End of lines configured by zsh-newuser-install
 
+# PATH variables
 export EDITOR=nvim
-export PATH="$HOME/.cargo/bin:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH" # Rust installs
+export PATH="$HOME/go/bin:$PATH" # Go installs
+export PATH="$HOME/.local/bin:$PATH" 
 export PATH="$HOME/bin:$PATH"
 export HYPRSHOT_DIR="$HOME/Pictures/Screenshots"
 
