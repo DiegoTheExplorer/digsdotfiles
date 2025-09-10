@@ -18,6 +18,7 @@ export HYPRSHOT_DIR="$HOME/Pictures/Screenshots"
 
 alias zj="zellij"
 alias zja="zellij attach"
+alias ankins="QTWEBENGINE_DISABLE_SANDBOX=1 anki &"
 
 fastfetch
 
