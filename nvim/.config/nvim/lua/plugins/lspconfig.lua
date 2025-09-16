@@ -98,17 +98,13 @@ return {
       local servers = {
         clangd = {},
         gopls = {},
-        pyright = {},
+        pyrefly = {},
         rust_analyzer = {
           procMacro = { enable = true },
         },
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         cssls = {},
         ts_ls = {},
-        slint_lsp = {
-          -- command = 'slint-lsp',
-          -- filetypes = { 'slint' },
-        },
         lua_ls = {
           -- cmd = {...},
           -- filetypes = { ...},

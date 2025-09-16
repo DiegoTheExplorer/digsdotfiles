@@ -35,8 +35,9 @@ return {
         lua = { 'stylua' },
         -- Conform can also run multiple formatters sequentially
         python = {
-          'black',
-          'isort',
+          'ruff_fix',
+          'ruff_format',
+          'ruff_organize_imports',
         },
         go = { 'gofmt' },
         stop_after_first = false,
