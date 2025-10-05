@@ -7,13 +7,12 @@ vim.g.maplocalleader = ' '
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 
-require 'options'
-
-require 'keymaps'
-
-require 'lazy-bootstrap'
-
-require 'lazy-plugins'
+require 'core/lsp'
+require 'core/mason-path'
+require 'core/options'
+require 'core/keymaps'
+require 'core/lazy-bootstrap'
+require 'core/lazy-plugins'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et

@@ -21,6 +21,7 @@ require('lazy').setup({
   require 'plugins/which-key',
 
   -- LSP Plugins
+  require 'plugins/mason-lspconfig',
   require 'plugins/lazydev',
   { 'Bilal2453/luvit-meta', lazy = true }, -- I don't remember what this does and I am too scared to remove it
   {
@@ -29,7 +30,6 @@ require('lazy').setup({
       require('nvim-highlight-colors').turnOn()
     end,
   },
-  require 'plugins/lspconfig', -- Main LSP Configuration
   require 'plugins/conform', -- Autoformat
   require 'plugins/nvim-lint', -- Linting
   require 'plugins/treesitter',
