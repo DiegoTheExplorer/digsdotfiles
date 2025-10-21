@@ -22,6 +22,7 @@ require('lazy').setup({
 
   -- LSP Plugins
   require 'plugins/mason-lspconfig',
+  require 'plugins/dadbod',
   require 'plugins/lazydev',
   { 'Bilal2453/luvit-meta', lazy = true }, -- I don't remember what this does and I am too scared to remove it
   {
