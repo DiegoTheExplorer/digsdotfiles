@@ -1,7 +1,7 @@
 return {
   {
     'folke/snacks.nvim',
-    priority = 999,
+    priority = 1000,
     lazy = false,
     ---@type snacks.Config
     opts = {
@@ -448,14 +448,6 @@ return {
           Snacks.picker.lsp_declarations()
         end,
         desc = 'Goto Declaration',
-      },
-      {
-        'gr',
-        function()
-          Snacks.picker.lsp_references()
-        end,
-        nowait = true,
-        desc = 'References',
       },
       {
         'gI',
