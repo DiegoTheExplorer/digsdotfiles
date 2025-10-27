@@ -15,7 +15,9 @@ return {
   ---@type obsidian.config
   opts = {
     legacy_commands = false,
-    disable_frontmatter = true,
+    frontmatter = {
+      enabled = false,
+    },
     note_id_func = function(title)
       local id_from_date_time = os.date('%Y%m%d%H%M%S', os.time())
       if title == nil then
