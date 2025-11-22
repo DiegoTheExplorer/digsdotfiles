@@ -11,7 +11,6 @@ return {
       'ts_ls', -- Typescript LSP
       'lua_ls', -- Lua LSP
       'angularls', -- AngularJS LSP
-      'zls', -- Zig LSP
       'svelte', -- Svelte LSP
       'sqlls', -- SQL LSP
 

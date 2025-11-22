@@ -16,6 +16,10 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.bun/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 export HYPRSHOT_DIR="$HOME/Pictures/Screenshots"
+# ZVM
+export ZVM_INSTALL="$HOME/.zvm/self"
+export PATH="$PATH:$HOME/.zvm/bin"
+export PATH="$PATH:$ZVM_INSTALL/"
 
 alias zj="zellij"
 alias zja="zellij attach"
