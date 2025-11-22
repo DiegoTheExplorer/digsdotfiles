@@ -48,8 +48,9 @@ require('lazy').setup({
   require 'plugins/gitsigns', -- Adds git related signs to the gutter, as well as utilities for managing changes
   require 'plugins/mini',
   require 'plugins/oil', -- Edit files like a vim buffer
-  require 'plugins/yazi',
+  require 'plugins/yazi', -- File explorer integration
   require 'plugins/vimtex', -- Latex file editing
+  require 'plugins/smear-cursor',
 
   -- TODO: properly configure nvim dap
   require 'kickstart.plugins.debug', -- Neovim debug adapter
