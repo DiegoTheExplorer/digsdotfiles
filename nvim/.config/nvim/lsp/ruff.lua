@@ -6,6 +6,9 @@ return {
       lint = {
         enable = false,
       },
+      format = {
+        enable = true,
+      },
     },
   },
 }

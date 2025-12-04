@@ -5,7 +5,7 @@ return {
     cmd = { 'ConformInfo' },
     keys = {
       {
-        '<leader>f',
+        '<leader>fm',
         function()
           require('conform').format { async = true, lsp_format = 'fallback' }
         end,
@@ -39,7 +39,7 @@ return {
         -- You can use 'stop_after_first' to run the first available formatter from the list
         javascript = { 'prettierd', 'prettier', stop_after_first = true },
         zig = { 'zig fmt' },
-        python = { 'ruff' },
+        python = { 'ruff_format' },
       },
     },
   },
