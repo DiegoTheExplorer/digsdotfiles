@@ -39,7 +39,7 @@ return {
         -- You can use 'stop_after_first' to run the first available formatter from the list
         javascript = { 'prettierd', 'prettier', stop_after_first = true },
         zig = { 'zig fmt' },
-        python = { 'ruff_format' },
+        python = { 'ruff_fix', 'ruff_format', 'ruff_organize_imports' },
       },
     },
   },
