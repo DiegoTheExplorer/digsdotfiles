@@ -13,7 +13,6 @@ return {
       'angularls', -- AngularJS LSP
       'svelte', -- Svelte LSP
       'sqlls', -- SQL LSP
-
       'stylua', -- Lua formatting
     },
   },

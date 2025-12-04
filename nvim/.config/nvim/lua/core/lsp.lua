@@ -96,3 +96,7 @@ vim.diagnostic.config {
 
 -- Custom lsp enable
 vim.lsp.enable 'zls' -- Mason doesn't use the latest version so I install it separately
+vim.lsp.enable 'ruff'
+vim.lsp.enable 'pyrefly'
+vim.lsp.enable 'sqlls'
+vim.lsp.enable 'render-markdown'

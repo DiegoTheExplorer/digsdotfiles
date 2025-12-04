@@ -8,7 +8,10 @@ return {
     config = function()
       local lint = require 'lint'
 
-      lint.linters_by_ft = {}
+      lint.linters_by_ft = {
+        zig = { 'zlint' },
+        python = { 'ruff' },
+      }
 
       local lint_augrop = vim.api.nvim_create_augroup('lint', { clear = true })
 
