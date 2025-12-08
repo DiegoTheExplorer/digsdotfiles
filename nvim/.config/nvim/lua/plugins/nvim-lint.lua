@@ -10,6 +10,7 @@ return {
 
       lint.linters_by_ft = {
         zig = { 'zlint' },
+        python = { 'ruff' },
       }
 
       local lint_augrop = vim.api.nvim_create_augroup('lint', { clear = true })

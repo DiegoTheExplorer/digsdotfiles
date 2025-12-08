@@ -10,23 +10,25 @@ bindkey -e
 
 # PATH variables
 export EDITOR=nvim
+export PATH="$HOME/.local/bin:$PATH" 
+export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH" # Rust installs
 export PATH="$HOME/go/bin:$PATH" # Go installs
-export PATH="$HOME/.local/bin:$PATH" 
-export PATH="$HOME/.bun/bin:$PATH"
-export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/.bun/bin:$PATH" # Bun installs
 export HYPRSHOT_DIR="$HOME/Pictures/Screenshots"
 # ZVM
 export ZVM_INSTALL="$HOME/.zvm/self"
 export PATH="$PATH:$HOME/.zvm/bin"
 export PATH="$PATH:$ZVM_INSTALL/"
+# opencode
+export PATH=/home/digs/.opencode/bin:$PATH
 
 alias zj="zellij"
 alias zja="zellij attach"
 alias ankins="QTWEBENGINE_DISABLE_SANDBOX=1 anki &"
 alias pav="source .venv/bin/activate"
 
-fastfetch
+fastfetch --file Lya.txt
 
 # Yazi shell wrapper
 function y() {
@@ -36,11 +38,6 @@ function y() {
 	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
 	rm -f -- "$tmp"
 }
-
-# Pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - zsh)"
 
 # UV
 eval "$(uvx --generate-shell-completion zsh)"
