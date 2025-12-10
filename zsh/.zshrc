@@ -30,6 +30,11 @@ alias pav="source .venv/bin/activate"
 
 fastfetch --file Lya.txt
 
+PY_VENV_PATH="/.venv/activate/bin"
+if [[ -f $PY_VENV_PATH ]]; then
+	source .venv/bin/activate
+fi
+
 # Yazi shell wrapper
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
