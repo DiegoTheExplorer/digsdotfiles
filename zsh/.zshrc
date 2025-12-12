@@ -28,7 +28,7 @@ alias zja="zellij attach"
 alias ankins="QTWEBENGINE_DISABLE_SANDBOX=1 anki &"
 alias pav="source .venv/bin/activate"
 
-fastfetch --file Lya.txt
+fastfetch
 
 PY_VENV_PATH="/.venv/activate/bin"
 if [[ -f $PY_VENV_PATH ]]; then
