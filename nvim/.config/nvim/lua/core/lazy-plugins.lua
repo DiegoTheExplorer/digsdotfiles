@@ -33,7 +33,9 @@ require('lazy').setup({
   },
   require 'plugins/conform', -- Autoformat
   require 'plugins/nvim-lint', -- Linting
-  require 'plugins/treesitter',
+  require 'plugins/treesitter', -- Syntax highlighting
+  require 'plugins/treesitter-textobjects', -- Query and select text objects
+  require 'plugins/treesitter-modules', -- Get the deprecated features from the master branch
   require 'plugins/blink-cmp', -- Autocompletion
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
