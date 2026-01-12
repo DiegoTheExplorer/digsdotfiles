@@ -1,8 +1,6 @@
 return {
   'MeanderingProgrammer/treesitter-modules.nvim',
   dependencies = { 'nvim-treesitter/nvim-treesitter' },
-  ---@module 'treesitter-modules'
-  ---@type ts.mod.UserConfig
   config = function()
     require('treesitter-modules').setup {
 
@@ -28,6 +26,10 @@ return {
       },
       ignore_install = { 'latex' },
       auto_install = true,
+
+      highlight = {
+        enable = true,
+      },
 
       incremental_selection = {
         enable = true,

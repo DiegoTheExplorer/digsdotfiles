@@ -62,6 +62,14 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
+-- Indentation options
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.softtabstop = 4
+
+vim.opt.autoindent = true
+vim.opt.smartindent = true
+
 -- It was in the nvim-highlight-colors instructions for highlighting css colors
 vim.opt.termguicolors = true
 
