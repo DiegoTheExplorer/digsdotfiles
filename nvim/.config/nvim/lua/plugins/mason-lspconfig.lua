@@ -12,7 +12,7 @@ return {
       'lua_ls', -- Lua LSP
       'angularls', -- AngularJS LSP
       'svelte', -- Svelte LSP
-      'sqlls', -- SQL LSP
+      'sqls', -- SQL LSP
       'stylua', -- Lua formatting
     },
   },

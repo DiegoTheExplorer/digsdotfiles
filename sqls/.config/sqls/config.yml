@@ -1,0 +1,5 @@
+lowercaseKeywords: false
+connections:
+  - alias: wisemanPOS
+    driver: sqlite3
+    dataSourceName: file:///home/digs/Work/wiseman-pos/test.db
