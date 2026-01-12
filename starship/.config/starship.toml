@@ -26,6 +26,7 @@ $cmd_duration\
 $line_break\
 $character"""
 
+scan_timeout = 100
 palette = 'catppuccin_mocha'
 
 [os]
