@@ -20,6 +20,10 @@ return {
           name = 'Catppuccin Mocha',
           colorscheme = 'catppuccin-mocha',
         },
+        {
+          name = 'Everforest',
+          colorscheme = 'everforest',
+        },
       },
       vim.keymap.set('n', '<leader>tt', function()
         local themery = require 'themery'

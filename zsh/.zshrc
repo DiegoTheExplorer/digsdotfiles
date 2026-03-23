@@ -15,6 +15,7 @@ export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH" # Rust installs
 export PATH="$HOME/go/bin:$PATH" # Go installs
 export PATH="$HOME/.bun/bin:$PATH" # Bun installs
+export PATH="/usr/pgadmin4/bin:$PATH" # pgadmin4
 export HYPRSHOT_DIR="$HOME/Pictures/Screenshots"
 # ZVM
 export ZVM_INSTALL="$HOME/.zvm/self"
