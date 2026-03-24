@@ -28,6 +28,9 @@ alias zj="zellij"
 alias zja="zellij attach"
 alias ankins="QTWEBENGINE_DISABLE_SANDBOX=1 anki &"
 alias pav="source .venv/bin/activate"
+# For applying goose database migrations using
+# .env files for the Goose environment variables
+alias gsdv="goose -env dev.env"
 
 fastfetch
 
