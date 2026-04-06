@@ -46,7 +46,7 @@ config.max_fps = 144
 
 -- Font Config
 config.font = wezterm.font("Terminess Nerd Font", { weight = "Bold", stretch = "Normal", style = "Normal" })
-config.font_size = 22
+config.font_size = 15
 
 -- Keybinds
 config.keys = {

@@ -1,8 +1,8 @@
 @import "mocha.css";
 
 * {
-	font-family: FantasqueSansMono Nerd Font;
-	font-size: 17px;
+	font-family: Terminess Nerd Font Propo;
+	font-size: 15px;
 	min-height: 0;
 }
 
@@ -16,13 +16,12 @@
 	border-radius: 1rem;
 	margin: 5px;
 	background-color: @surface0;
-	margin-left: 1rem;
 }
 
 #workspaces button {
 	color: @lavender;
 	border-radius: 1rem;
-	padding: 0.4rem;
+	padding: 0.2rem;
 }
 
 #workspaces button.active {
@@ -44,7 +43,7 @@
 #custom-lock,
 #custom-power {
 	background-color: @surface0;
-	padding: 0.5rem 1rem;
+	padding: 0.2rem 0.5rem;
 	margin: 5px 0;
 }
 
@@ -103,7 +102,7 @@
 }
 
 #keyboard-state {
-	margin: 5px 0rem 5px 1rem;
+	margin: 5px 1rem 5px 1rem;
 	border-radius: 1rem 1rem 1rem 1rem;
 	background-color: @surface0;
 	color: @lavender;

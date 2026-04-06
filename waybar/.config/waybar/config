@@ -1,4 +1,5 @@
 {
+	"height": 24,
 	"layer": "top", // Waybar at top layer
 	"position": "top", // Waybar position (top|bottom|left|right)
 	// "width": 1280, // Waybar width
@@ -29,24 +30,24 @@
 	},
 	"clock": {
 	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-	"format-alt": " {:%d/%m/%Y}",
+	"format-alt": " {:%d/%m/%Y}",
 	"format": "󰥔 {:%H:%M}"
 	},
 	"backlight": {
 	"device": "intel_backlight",
-	"format": "{icon}",
+	"format": "{icon} {percent}%",
 	"format-icons": ["", "", "", "", "", "", "", "", ""]
 	},
 	"battery": {
-	"states": {
-	    "warning": 30,
-	    "critical": 15
-	},
-	"format": "{icon}",
-	"format-charging": "",
-	"format-plugged": "",
-	"format-alt": "{icon}",
-	"format-icons": ["", "",  "", "", "", "", "", "", "", "", "", ""]
+		"states": {
+			"warning": 30,
+			"critical": 15
+		},
+		"format": "{icon} {capacity}%",
+		"format-charging": "󰂄 {capacity}%",
+		"format-plugged": "󰂏",
+		"format-alt": "{icon} {capacity}%",
+		"format-icons": ["󰁺", "󰁻",  "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰁹"]
 	},
 	"pulseaudio": {
 	// "scroll-step": 1, // %, can be a float
@@ -59,16 +60,17 @@
 	},
 	"custom/lock": {
 	"tooltip": false,
-	"on-click": "sh -c '(sleep 0.5s; swaylock --grace 0)' & disown",
+	"on-click": "pidof hyprlock || hyprlock",
 	"format": "",
 	},
 	"custom/power": {
 	"tooltip": false,
-	"on-click": "wlogout &",
+	"on-click": "shutdown now",
 	"format": "⏻"
 	},
 	"keyboard-state": {
 	    "capslock": true,
+		"device-path": "/dev/input/by-path/platform-i8042-serio-0-event-kbd",
 	    "format": "{name} {icon}",
 	    "format-icons": {
 		"locked": "",

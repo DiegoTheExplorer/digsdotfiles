@@ -5,6 +5,7 @@ return {
     require('treesitter-modules').setup {
 
       ensure_installed = {
+        'go',
         'bash',
         'c',
         'diff',
@@ -15,7 +16,6 @@ return {
         'query',
         'vim',
         'vimdoc',
-        'java',
         'regex',
         'sql',
         'html',
