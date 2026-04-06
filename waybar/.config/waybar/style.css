@@ -6,10 +6,9 @@
 	min-height: 0;
 }
 
-#waybar {
+window#waybar {
 	background: transparent;
 	color: @text;
-	margin: 5px 5px;
 }
 
 #workspaces {
