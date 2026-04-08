@@ -2,7 +2,7 @@
 --  See `:help vim.keymap.set()`
 
 -- Unbind snippet jump
-vim.keymap.set('i', '<Tab>', '<Nop>')
+vim.keymap.set('i', '<Tab>', [[<Tab>]])
 
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
