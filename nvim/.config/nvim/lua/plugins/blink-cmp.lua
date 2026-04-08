@@ -34,6 +34,7 @@ return {
     opts = {
       keymap = {
         preset = 'default',
+        ['<Tab>'] = { 'fallback' },
       },
 
       appearance = {
