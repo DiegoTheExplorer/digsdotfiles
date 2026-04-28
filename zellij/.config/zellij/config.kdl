@@ -222,6 +222,44 @@ keybinds clear-defaults=true {
     shared_except "locked" {
         bind "Alt f" {
             LaunchOrFocusPlugin "file:~/.config/zellij/plugins/zellij_forgot.wasm" {
+                "LOAD_ZELLIJ_BINDINGS" "false"
+                "lock / unlock" "alt + g"
+                "move focus or tab left" "alt + h"
+                "move focus down" "alt + j"
+                "move focus up" "alt + k"
+                "move focus or tab right" "alt + l"
+
+                "pane mode" "alt + p"
+                "new pane" "[pane mode] n"
+                "new pane down" "[pane mode] d"
+                "new pane right" "[pane mode] r"
+                "rename panemode" "[pane mode] c"
+                "close pane" "[pane mode] x"
+                "toggle pane frames" "[pane mode] z"
+
+                "tab mode" "alt + t"
+                "new tab" "[tab mode] n"
+                "break pane left" "[tab mode] ["
+                "break pane right" "[tab mode] ]"
+                "rename tab" "[tab mode] t"
+                "toggle active tab sync" "[tab mode] s"
+                "close tab" "[tab mode] x"
+                "move tab left" "[tab mode] h"
+                "move tab right" "[tab mode] l"
+
+                "resize mode" "alt + r"
+                "inrease left" "[resize mode] h"
+                "inrease down" "[resize mode] j"
+                "inrease up" "[resize mode] k"
+                "inrease left" "[resize mode] l"
+
+                "move mode" "alt + m"
+
+                "scroll mode" "alt + s"
+                "entersearch mode" "[scroll mode] s"
+                "search mode" "[entersearch mode] enter"
+
+                "session mode" "alt + n"
                 floating true
             }
         }
@@ -264,3 +302,4 @@ theme "catppuccin-mocha"
 default_shell "/usr/bin/zsh"
 show_startup_tips false
 default_layout "compact" 
+pane_frames false
