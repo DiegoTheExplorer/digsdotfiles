@@ -31,6 +31,8 @@ alias pav="source .venv/bin/activate"
 # For applying goose database migrations using
 # .env files for the Goose environment variables
 alias gsdv="goose -env dev.env"
+alias ll="eza --icons=always --color-scale=all --no-user --no-permissions --git -l"
+alias la="eza --icons=always --color-scale=all --no-user --no-permissions --git -la"
 
 fastfetch
 
