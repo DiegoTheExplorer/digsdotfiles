@@ -260,6 +260,7 @@ keybinds clear-defaults=true {
                 "search mode" "[entersearch mode] enter"
 
                 "session mode" "alt + n"
+                "quit" "ctrl + alt + q"
                 floating true
             }
         }
