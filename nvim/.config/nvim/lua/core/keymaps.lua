@@ -28,6 +28,21 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
+-- Keybinds for tabs
+vim.keymap.set('n', '<C-1>', '1gt', { noremap = true, desc = 'Focus tab 1' })
+vim.keymap.set('n', '<C-2>', '2gt', { noremap = true, desc = 'Focus tab 2' })
+vim.keymap.set('n', '<C-3>', '3gt', { noremap = true, desc = 'Focus tab 3' })
+vim.keymap.set('n', '<C-4>', '4gt', { noremap = true, desc = 'Focus tab 4' })
+vim.keymap.set('n', '<C-4>', '5gt', { noremap = true, desc = 'Focus tab 5' })
+vim.keymap.set('n', '<C-6>', '6gt', { noremap = true, desc = 'Focus tab 6' })
+vim.keymap.set('n', '<C-7>', '7gt', { noremap = true, desc = 'Focus tab 7' })
+vim.keymap.set('n', '<C-8>', '8gt', { noremap = true, desc = 'Focus tab 8' })
+vim.keymap.set('n', '<C-9>', '9gt', { noremap = true, desc = 'Focus tab 9' })
+
+vim.keymap.set('n', '<C-M-1>', '<cmd>tabm 0<CR>', { noremap = true, desc = 'Move current tab to position 1' })
+vim.keymap.set('n', '<C-M-h>', '<cmd>tabm -1<CR>', { noremap = true, desc = 'Move tab to the left' })
+vim.keymap.set('n', '<C-M-l>', '<cmd>tabm +1<CR>', { noremap = true, desc = 'Move tab to the right' })
+
 vim.keymap.set('n', '<leader>dbu', '<cmd>DBUI<CR>', { desc = 'Opens Vim-Dadbod UI' })
 
 -- [[ Basic Autocommands ]]

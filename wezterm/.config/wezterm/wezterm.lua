@@ -5,6 +5,9 @@ local kanagawa_lotus = require("colors.kanagawa-lotus")
 -- Enables image rendering in the terminal
 config.enable_kitty_graphics = true
 
+-- Removes key input ambiguity
+config.enable_kitty_keyboard = true
+
 -- Shell Config
 config.default_prog = { "zsh" }
 
