@@ -73,6 +73,9 @@ vim.opt.smartindent = true
 -- It was in the nvim-highlight-colors instructions for highlighting css colors
 vim.opt.termguicolors = true
 
+vim.opt.timeout = true
+vim.opt.timeoutlen = 300
+
 -- Set neovim's bg as none so the terminal emulator translucency comes through
 vim.api.nvim_set_hl(0, 'Normal', { bg = 'none' })
 vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })
