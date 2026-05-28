@@ -21,7 +21,7 @@ require('lazy').setup({
   require 'plugins/which-key',
 
   -- LSP Plugins
-  require 'plugins/mason-lspconfig',
+  require 'plugins/mason-lspconfig', -- LSP installation and update management
   require 'plugins/dadbod', -- SQL completions
   require 'plugins/sqls', -- SQL LSP
   require 'plugins/lazydev',
@@ -54,6 +54,7 @@ require('lazy').setup({
   require 'plugins/yazi', -- File explorer integration
   require 'plugins/vimtex', -- Latex file editing
   require 'plugins/smear-cursor',
+  require 'plugins/marko',
 
   -- TODO: properly configure nvim dap
   require 'kickstart.plugins.debug', -- Neovim debug adapter
