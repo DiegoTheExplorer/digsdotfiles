@@ -1,1 +1,2 @@
 graphical-session.target.wants
+timers.target.wants
