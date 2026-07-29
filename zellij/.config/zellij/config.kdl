@@ -304,3 +304,4 @@ default_shell "/usr/bin/zsh"
 show_startup_tips false
 default_layout "compact" 
 pane_frames false
+session_serialization false
