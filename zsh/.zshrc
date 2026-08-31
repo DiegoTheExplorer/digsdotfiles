@@ -24,13 +24,16 @@ export PATH="$PATH:$ZVM_INSTALL/"
 # opencode
 export PATH=/home/digs/.opencode/bin:$PATH
 
+# Session manager aliases
 alias zj="zellij"
 alias zja="zellij attach"
+
+# Anki wouldn't start properly because of hyprland not 
+# being compatible with qtwebengine's sandbox
 alias ankins="QTWEBENGINE_DISABLE_SANDBOX=1 anki &"
 alias pav="source .venv/bin/activate"
-# For applying goose database migrations using
-# .env files for the Goose environment variables
-alias gsdv="goose -env dev.env"
+
+# Using eza as an ls replacement
 alias ll="eza --icons=always --color-scale=all --no-user --no-permissions --git -l"
 alias la="eza --icons=always --color-scale=all --no-user --no-permissions --git -la"
 
@@ -68,6 +71,7 @@ eval "$(zoxide init zsh)"
 # Starship init
 eval "$(starship init zsh)"
 
+# zsh vim mode for commands
 source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
 # Fish-like syntax highlighting
