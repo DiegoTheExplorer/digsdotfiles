@@ -26,7 +26,7 @@ export PATH=/home/digs/.opencode/bin:$PATH
 
 # SSH agent that stores my unecrypted SSH keys in primary memory
 # so I don't have to type them in every single time
-eval "$(ssh-agent -s)"
+eval "$(ssh-agent -s)" &>/dev/null
 
 # Session manager aliases
 alias zj="zellij"
