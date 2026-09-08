@@ -24,6 +24,8 @@ export PATH="$PATH:$ZVM_INSTALL/"
 # opencode
 export PATH=/home/digs/.opencode/bin:$PATH
 
+export BAT_THEME="Catppuccin Mocha"
+
 # SSH agent that stores my unecrypted SSH keys in primary memory
 # so I don't have to type them in every single time
 eval "$(ssh-agent -s)" &>/dev/null
