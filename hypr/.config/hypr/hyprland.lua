@@ -15,17 +15,18 @@
 
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
 hl.monitor({
-	output = "DP-6",
-	mode = "1920x1080@60.00Hz",
+	output = "eDP-1",
+	mode = "1920x1200@60.00Hz",
 	position = "0x0",
 	scale = 1,
 })
 
 hl.monitor({
-	output = "HDMI-A-2",
-	mode = "1920x1080@144.00Hz",
+	output = "HDMI-A-1",
+	mode = "1920x1200@60.00Hz",
 	position = "0x0",
 	scale = 1,
+	mirror = "eDP-1",
 })
 
 ---------------------
@@ -373,16 +374,16 @@ hl.window_rule({
 -- TODO: Create a system for dynamically assigning workspaces to monitors
 
 -- TODO: Make the following monitor to workspace assignment activate if on PC
-hl.window_rule({ workspace = 1, monitor = "HDMI-A-2" })
-hl.window_rule({ workspace = 2, monitor = "HDMI-A-2" })
-hl.window_rule({ workspace = 3, monitor = "HDMI-A-2" })
-hl.window_rule({ workspace = 4, monitor = "HDMI-A-2" })
-hl.window_rule({ workspace = 5, monitor = "HDMI-A-2" })
-hl.window_rule({ workspace = 6, monitor = "DP-6" })
-hl.window_rule({ workspace = 7, monitor = "DP-6" })
-hl.window_rule({ workspace = 8, monitor = "DP-6" })
-hl.window_rule({ workspace = 9, monitor = "DP-6" })
-hl.window_rule({ workspace = 0, monitor = "DP-6" })
+hl.window_rule({ workspace = 1, monitor = "HDMI-A-1" })
+hl.window_rule({ workspace = 2, monitor = "HDMI-A-1" })
+hl.window_rule({ workspace = 3, monitor = "HDMI-A-1" })
+hl.window_rule({ workspace = 4, monitor = "HDMI-A-1" })
+hl.window_rule({ workspace = 5, monitor = "HDMI-A-1" })
+hl.window_rule({ workspace = 6, monitor = "HDMI-A-1" })
+hl.window_rule({ workspace = 7, monitor = "HDMI-A-1" })
+hl.window_rule({ workspace = 8, monitor = "HDMI-A-1" })
+hl.window_rule({ workspace = 9, monitor = "HDMI-A-1" })
+hl.window_rule({ workspace = 0, monitor = "HDMI-A-1" })
 
 -- Hyprland-run windowrule
 hl.window_rule({
