@@ -49,7 +49,7 @@ config.max_fps = 144
 
 -- Font Config
 config.font = wezterm.font("Terminess Nerd Font", { weight = "Bold", stretch = "Normal", style = "Normal" })
-config.font_size = 15
+config.font_size = 22
 
 -- Keybinds
 config.keys = {
@@ -77,6 +77,11 @@ config.keys = {
 		key = "$",
 		mods = "SHIFT|CTRL|ALT",
 		action = wezterm.action({ EmitEvent = "toggle-color-scheme" }),
+	},
+	{
+		key = "r",
+		mods = "SHIFT|CTRL",
+		action = wezterm.action.ResetFontSize,
 	},
 }
 config.window_background_opacity = 0.9
